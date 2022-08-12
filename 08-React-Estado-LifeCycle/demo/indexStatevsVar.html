@@ -40,15 +40,16 @@
       return (
         <div>          
           <h1>State vs Variable Contador</h1>
-          <div><button onClick={this.onButtonClick}>Suma uno!</button>
+          <div>
+            <button onClick={this.onButtonClick}>Suma uno!</button>
             &nbsp;Hola, soy el State {this.state.contador}!!
-            </div>
-            <div>
+          </div>
+          <div>
             <p>Variable contador: {this.variable}</p>
             <button onClick={this.incrementoContador}>Incrementa!</button>  
-            </div>
-            </div>
-            )
+          </div>
+        </div>
+      )
     }
   };
 
