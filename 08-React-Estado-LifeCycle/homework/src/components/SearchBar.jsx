@@ -1,16 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
+import Style from "../Styles/SearchBar.module.css";
 
-export default function SearchBar({onSearch}) {
+export default function SearchBar(props) {
+  // acá va tu código
   return (
-    <form onSubmit={(e) => {
-      e.preventDefault();
-      onSearch("Cairns");
-    }}>
+    <div>
       <input
+        className={Style.input}
         type="text"
-        placeholder="Ciudad..."
+        placeholder="Search your city..."
       />
-      <input type="submit" value="Agregar" />
-    </form>
+      <button className={Style.boton} onClick={() => props.onSearch("Cairns")}>
+        Agregar
+      </button>
+    </div>
   );
 }

@@ -1,0 +1,31 @@
+
+#close {
+  background: rgb(202, 79, 99);
+  color: white;
+  position: relative;
+  float: right;
+  border: none;
+  margin: 5px 5px 0 0;
+}
+
+.container {
+  display: inline-block;
+  background-color: #175187;
+  color: #d9d2bf;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px 5px rgb(0 0 0 / 50%);
+  width: 270px;
+  height: 380px;
+  margin: 25px;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.img {
+  width: 240px;
+  height: auto;
+}
