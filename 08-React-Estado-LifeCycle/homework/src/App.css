@@ -6,3 +6,8 @@
   display: flex;
   justify-content: center;
 }
+
+.containerCards{
+  margin: 100px 0 0 0;
+  padding: 15px 0 0 0;
+}

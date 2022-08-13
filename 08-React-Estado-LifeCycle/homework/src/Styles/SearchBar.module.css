@@ -1,12 +1,13 @@
 .input {
   background-color: rgb(96, 96, 96);
-  color: pink;
+  color: #b40808;
+  height: 25px;
   margin: 0 18px 0 0;
   border-radius: 8px;
 }
 
 ::placeholder {
-  color: pink;
+  color: #b40808;
 }
 
 .boton {
@@ -33,4 +34,8 @@
   position: relative;
   top: 1px;
   background: white;
+}
+
+.formSearch{
+  height: 35px;
 }

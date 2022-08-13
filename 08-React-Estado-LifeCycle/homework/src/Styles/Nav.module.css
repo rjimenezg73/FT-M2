@@ -1,0 +1,12 @@
+#logoHenry {
+  margin-right: 20px;
+}
+
+.container{
+  background-color: rgb(59, 56, 56);
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 10px 0;
+  gap: 35px;
+}

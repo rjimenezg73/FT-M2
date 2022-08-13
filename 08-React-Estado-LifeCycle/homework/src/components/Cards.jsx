@@ -2,7 +2,7 @@ import React from "react";
 import Card from "./Card.jsx";
 import Style from "../Styles/Cards.module.css";
 
-export default function Cards({ cities }) {
+export default function Cards({ cities, onClose }) {
   // acá va tu código
   // tip, podés usar un map
 
@@ -20,7 +20,7 @@ export default function Cards({ cities }) {
         cities.map((ciudad, index) => {
           // [{},{},{}]
           //        c
-          // console.log(ciudad)
+         console.log(ciudad)
           return (
             <Card
               key={ciudad.id}
