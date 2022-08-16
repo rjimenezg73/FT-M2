@@ -1,8 +1,5 @@
-.allCards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  align-items: center;
-  gap: 7px;
-  margin: 50px 0 0 0;
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

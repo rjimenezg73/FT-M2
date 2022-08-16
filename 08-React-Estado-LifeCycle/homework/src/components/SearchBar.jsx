@@ -1,22 +1,31 @@
-import React, {useState} from "react";
-import Style from "../Styles/SearchBar.module.css";
+import React, { useState } from "react";
+import styles from '../styles/SearchBar.module.css';
+
 
 export default function SearchBar({onSearch}) {
   // Estado Para guardar lo que se escribe
   
+  let [value, setValue] = useState('');
+  
   return (
-      <form className={ Style.formSearch } onSubmit={(e) => {
-        e.preventDefault();  // Evito que se recargue la páguina. 
-        onSearch('Cairns');
-      }}>
-        <input
-          type="text"
-          placeholder="Ciudad..."
+    <div className={styles.searchBar}>
+      <form onSubmit={(e) => {
+          e.preventDefault();
+          onSearch(value);
+          setValue('');
+        }}>
+        <input 
+          type='text' placeholder='Ciudad...'
+          onChange={event => setValue(event.target.value)}
         />
         <input 
           type="submit"
-          value="Agregar"
+          value="Buscar"
         />
       </form>
+    </div>
   );
 }
+
+
+
